@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/java-lib/!svn/ver/7/trunk/src/java/com/cloudmade/api/routing
+END
+RouteInstruction.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/java-lib/!svn/ver/7/trunk/src/java/com/cloudmade/api/routing/RouteInstruction.java
+END
+RouteNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/java-lib/!svn/ver/7/trunk/src/java/com/cloudmade/api/routing/RouteNotFoundException.java
+END
+RouteSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/java-lib/!svn/ver/7/trunk/src/java/com/cloudmade/api/routing/RouteSummary.java
+END
+Route.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/java-lib/!svn/ver/7/trunk/src/java/com/cloudmade/api/routing/Route.java
+END
+TransitPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/java-lib/!svn/ver/7/trunk/src/java/com/cloudmade/api/routing/TransitPoint.java
+END
