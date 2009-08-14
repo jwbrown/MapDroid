@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.project.mapapp"
+      package="com.cloudmade.api"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".mapapp"
-                  android:label="@string/app_name">
-            <intent-filter>
+    <application android:icon="@drawable/icon"
+		android:label="@string/app_name">
+		<uses-library android:name="android.test.runner" />
+		<service android:name="CloudMadeClient" android:process=":remote" android:enabled="true">	
+			<intent-filter>
+				<action android:name="com.cloudmade.api.CLOUDMADE"></action>
+			</intent-filter>
+		</service>
+		<activity android:name="com.cloudmade.example.SimpleMapActivity">
+			<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-    <uses-library android:name="android.test.runner" />
-    </application>
-    <instrumentation android:name="android.test.InstrumentationTestRunner"
-    android:targetPackage="com.project.quicktxt"
-    android:label="your tests label" />
+		</activity>
+	</application>
+    
     <uses-sdk android:minSdkVersion="3" />
-</manifest> 
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	
+	<uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+	
+    <instrumentation android:label="Unit Tests" 
+		android:targetPackage="com.cloudmade.api" android:name="CloudmadeTestRunner"/>
+
+</manifest>

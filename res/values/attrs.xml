@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="CloudMadeMapView">
+		<attr name="api_key" format="string" />
+		<attr name="zoom" format="integer" />
+		
+		<attr name="style" format="integer" />
+		<attr name="latitude" format="float" />
+		<attr name="longitude" format="float" />
+	</declare-styleable>
+</resources>
